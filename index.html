@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <!-- =========================================================
+       BASIC SETUP
+       Ganti title dan description sesuai nama / branding kamu.
+  ========================================================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muh Ashif Assidieqy | Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio pribadi Muh Ashif Assidieqy sebagai Frontend Developer dan Creative Web Builder."
+  />
+
+  <!-- File CSS utama -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- =========================================================
+       WELCOME SCREEN
+       Bagian loading awal website.
+       Kalau tidak mau pakai loading, hapus div ini dan bagian
+       WELCOME SCREEN di script.js.
+  ========================================================== -->
+  <div class="welcome-screen" id="welcomeScreen">
+    <div class="welcome-content">
+      <p class="welcome-small">Welcome to</p>
+      <h1><span>My</span>Portfolio</h1>
+      <div class="welcome-line"></div>
+      <p class="welcome-loading">Loading experience...</p>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       BACKGROUND ANIMASI
+       Jangan dihapus kalau masih ingin background bergerak.
+  ========================================================== -->
+  <div class="animated-bg" id="animatedBg">
+    <div class="bg-gradient bg-gradient-1"></div>
+    <div class="bg-gradient bg-gradient-2"></div>
+    <div class="bg-gradient bg-gradient-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Efek cahaya mengikuti cursor di desktop -->
+  <div class="cursor-glow"></div>
+
+  <!-- =========================================================
+       NAVBAR
+       Ganti logo dan menu kalau diperlukan.
+       Pastikan href menu sesuai dengan id section.
+  ========================================================== -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span>Portofolio </span>| Muh Ashif Assidieqy
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <!-- Tombol dark/light mode -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon">☾</span>
+      </button>
+
+      <!-- Tombol menu mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HERO SECTION
+         Ganti nama, deskripsi, statistik, foto, dan CV.
+    ========================================================== -->
+    <section class="hero section" id="home">
+      <div class="hero-content reveal reveal-left">
+        <p class="hero-badge">
+          <span></span>
+          Available for Work
+        </p>
+
+        <h1>
+          Hi, saya <span class="gradient-text">Muh Ashif Assidieqy</span>
+        </h1>
+
+        <h2>
+          Saya seorang <span id="typingText"></span>
+        </h2>
+
+        <p class="hero-description">
+          Saya membangun website modern, responsif, interaktif, dan menarik
+          untuk kebutuhan personal branding dan portofolio.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn primary">Lihat Portfolio</a>
+
+          <!--
+            GANTI FILE CV:
+            Simpan CV kamu di assets/cv/
+            lalu sesuaikan nama file di href dan download.
+          -->
+          <a
+            href="assets/cv/CV-Muh-Ashif-Assidieqy.pdf"
+            class="btn secondary"
+            download="CV-Muh-Ashif-Assidieqy.pdf"
+          >
+            Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <strong>3+</strong>
+            <span>Projects</span>
+          </div>
+          <div>
+            <strong>3+</strong>
+            <span>Certificates</span>
+          </div>
+          <div>
+            <strong>14+</strong>
+            <span>Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-right">
+        <div class="profile-card" id="profileCard">
+          <div class="card-glow"></div>
+
+          <div class="card-header">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="avatar-box">
+            <div class="avatar-ring"></div>
+
+            <!--
+              GANTI FOTO PROFILE:
+              Simpan foto kamu di assets/images/profile.jpg
+              atau ubah src di bawah sesuai nama file kamu.
+            -->
+            <div class="avatar">
+              <img
+                src="assets/images/profile.jpeg"
+                alt="Foto Muh Ashif Assidieqy"
+                onerror="this.style.display='none'"
+              />
+            </div>
+          </div>
+
+          <h3>Muh Ashif Assidieqy</h3>
+          <p>Informatics Graduate</p>
+
+          <div class="tech-stack">
+            <span>Frontend Development</span>
+            <span>HTML</span>
+            <span>Digital Tools</span>
+            <span>Microsoft Office</span>
+            <span>Fast Learner</span>
+            <span>Adaptability</span>
+            <span>Teamwork</span>
+          </div>
+
+          <div class="code-preview">
+            <code>const future = "Keep Growing";</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT SECTION
+         Bagian card Clean Design / Responsive / Smooth Animation
+         sudah dihapus sesuai permintaan kamu.
+    ========================================================== -->
+    <section class="about section" id="about">
+      <div class="section-heading reveal reveal-up">
+        <p class="section-subtitle">Get to know me</p>
+        <h2>About <span>Me</span></h2>
+        <p>
+          Saya merupakan lulusan S1 Teknik Informatika dengan pengalaman kerja di bidang pelayanan pelanggan serta pengalaman magang di lingkungan industri manufaktur. Saya memiliki kemampuan dalam pengolahan data, dokumentasi, penggunaan Microsoft Office, serta teknologi informasi.
+          Saya terbiasa bekerja secara individu maupun dalam tim, mampu beradaptasi dengan lingkungan kerja baru, serta memiliki kemauan belajar yang tinggi. Saya siap mengembangkan kemampuan dan memberikan kontribusi terbaik di berbagai bidang pekerjaan.
+        </p>
+      </div>
+
+      <div class="about-container about-simple">
+        <div class="about-left reveal reveal-left">
+          <div class="about-card">
+            <div class="about-photo">
+              <!-- GANTI FOTO ABOUT DI SINI -->
+              <img
+                src="assets/images/profile1.jpeg"
+                alt="Foto Muh Ashif Assidieqy"
+                onerror="this.style.display='none'"
+              />
+            </div>
+
+            <div class="about-status">
+              <span></span>
+              Open to Work
+            </div>
+
+            <h3>Muh Ashif Assidieqy</h3>
+            <p>Bachelor of Informatics & Continuous Learner</p>
+
+            <div class="about-socials">
+              <!-- GANTI LINK SOSIAL MEDIA DI SINI -->
+              <a href="https://www.linkedin.com/in/muh-ashif-assidieqy-37a330415/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+              <a href="https://www.instagram.com/mhmmdashf?igsh=MTV6dDFqdGl4OXVkYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right reveal reveal-right">
+          <div class="about-text">
+            <h3>Terus Belajar & Terus Berkembang</h3>
+
+            <p>
+              Saya percaya bahwa setiap pengalaman merupakan kesempatan untuk belajar, berkembang, dan meningkatkan kemampuan. 
+              Dengan latar belakang pendidikan Teknik Informatika serta pengalaman di bidang pelayanan dan lingkungan industri, saya terbiasa menghadapi berbagai tugas, 
+              beradaptasi dengan lingkungan baru, dan bekerja secara kolaboratif.
+            </p>
+
+            <p>
+              Saya terbuka terhadap berbagai peluang karier 
+              dan berkomitmen untuk terus mengembangkan kemampuan 
+              agar dapat memberikan kontribusi terbaik bagi perusahaan maupun tim.
+            </p>
+          </div>
+
+          <div class="about-info-grid">
+            <div class="about-info-card">
+              <span>Nama</span>
+              <strong>Muh Ashif Assidieqy</strong>
+            </div>
+
+            <div class="about-info-card">
+              <span>Career Status</span>
+              <strong>Open to Opportunities | Ready to Contribute</strong>
+            </div>
+
+            <div class="about-info-card">
+              <span>Area of Interest</span>
+              <strong>Technology • Business • Innovation • Operations</strong>
+            </div>
+
+            <div class="about-info-card">
+              <span>Status</span>
+              <strong>Available for Work</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         SKILLS SECTION
+         Ganti nama skill dan persentase sesuai kemampuan kamu.
+         Persentase ada di style="--level: 90%;"
+    ========================================================== -->
+    <section class="skills section" id="skills">
+      <div class="section-heading reveal reveal-up">
+        <p class="section-subtitle">My Abilities</p>
+        <h2>Core <span>Skills</span></h2>
+        <p>
+          Kemampuan utama yang saya miliki dan terus saya kembangkan untuk mendukung pekerjaan secara profesional.
+        </p>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>HTML</h3>
+            <span>90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 90%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>Digital Tools</h3>
+            <span>85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 85%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>Microsoft Office</h3>
+            <span>80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>Teamwork</h3>
+            <span>80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 80%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>Fast Learner</h3>
+            <span>88%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 88%;"></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal reveal-up">
+          <div class="skill-top">
+            <h3>Problem Solving</h3>
+            <span>82%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-progress" style="--level: 82%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PORTFOLIO SHOWCASE
+         Bagian ini menggantikan My Services dan Projects lama.
+         Isi project, sertifikat, dan tech stack diatur dari script.js.
+    ========================================================== -->
+    <section class="portfolio-showcase section" id="portfolio">
+      <div class="section-heading reveal reveal-up">
+        <p class="section-subtitle">PORTFOLIO</p>
+        <h2>Projects & <span>Achievements</span></h2>
+        <p>
+          Jelajahi proyek, sertifikasi, dan keahlian teknis saya yang menunjukkan perkembangan, 
+          pengalaman, serta semangat saya untuk terus belajar.
+        </p>
+      </div>
+
+      <div class="portfolio-shell reveal reveal-up">
+        <div class="portfolio-tabs" role="tablist" aria-label="Portfolio categories">
+          <button class="portfolio-tab active" type="button" data-tab="projects">
+            Projects
+          </button>
+          <button class="portfolio-tab" type="button" data-tab="certificates">
+            Certificates
+          </button>
+          <button class="portfolio-tab" type="button" data-tab="tech">
+            Skills & Tools
+          </button>
+        </div>
+
+        <div class="portfolio-panels">
+          <!-- Project akan otomatis muncul dari script.js -->
+          <div class="portfolio-panel active" data-panel="projects">
+            <div class="portfolio-grid" id="projectList"></div>
+          </div>
+
+          <!-- Sertifikat akan otomatis muncul dari script.js -->
+          <div class="portfolio-panel" data-panel="certificates">
+            <div class="certificate-grid" id="certificateList"></div>
+          </div>
+
+          <!-- Tech stack akan otomatis muncul dari script.js -->
+          <div class="portfolio-panel" data-panel="tech">
+            <div class="tech-grid-large" id="techStackList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EXPERIENCE SECTION
+         Ganti sesuai pengalaman, pendidikan, PKL, organisasi,
+         atau perjalanan belajar kamu.
+    ========================================================== -->
+    <section class="experience section" id="experience">
+      <div class="section-heading reveal reveal-up">
+        <p class="section-subtitle">My Journey</p>
+        <h2>Experience & <span>Education</span></h2>
+        <p>
+          Perjalanan pendidikan, proyek, dan pengalaman kerja yang membentuk kemampuan teknis, 
+          profesional, serta semangat saya untuk terus berkembang.
+        </p>
+      </div>
+
+      <div class="timeline">
+
+  <div class="timeline-item reveal reveal-left">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span>September 2021 - Oktober 2025</span>
+      <h3>S1 Teknik Informatika</h3>
+      <p>
+        Menempuh pendidikan Sarjana Teknik Informatika di Universitas Mercu Buana
+        Yogyakarta. Mempelajari pengembangan perangkat lunak, basis data,
+        pemrograman web, analisis data, serta menyelesaikan skripsi mengenai
+        implementasi CNN untuk klasifikasi jenis minuman kopi.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal reveal-right">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span>2023 - 2024</span>
+      <h3>Academic Web Development Project</h3>
+      <p>
+        Mengembangkan website e-commerce sebagai proyek akademik menggunakan
+        HTML, CSS, JavaScript, PHP, CodeIgniter 3, dan MySQL. Mengimplementasikan
+        fitur autentikasi, manajemen produk, keranjang belanja, checkout,
+        dashboard admin, serta database relasional.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal reveal-left">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span>Desember 2025 - Juni 2026</span>
+      <h3>Frontliner / Customer Service Assistant (Part-Time)</h3>
+      <p>
+        Bekerja sebagai Frontliner/Asisten Layanan Pelanggan di sebuah
+        resto. Bertanggung jawab melayani transaksi pelanggan, mengoperasikan
+        kasir, merekap penjualan harian, memberikan pelayanan yang ramah, serta
+        membantu operasional restoran agar berjalan dengan baik.
+      </p>
+    </div>
+  </div>
+
+  <div class="timeline-item reveal reveal-left">
+    <div class="timeline-dot"></div>
+    <div class="timeline-content">
+      <span>Agustus 2026 - Oktober 2026</span>
+      <h3>PT Denso Indonesia – MagangHub Kemnaker</h3>
+      <h3>Quality Management Control (QMC) / Digital Transformation Intern</h3>
+      <p>
+        Magang pada bagian Quality Management Control (QMC) dengan mengembangkan 
+        aplikasi PCR Monitoring menggunakan Microsoft Power Apps dan Microsoft Lists. 
+        Bertanggung jawab dalam pengembangan fitur, pengujian, perbaikan aplikasi, serta dokumentasi. 
+        Selain itu, mempelajari Tentang QMC dan Supplier Part Development.
+      </p>
+    </div>
+  </div>
+
+</div>
+
+    <!-- =========================================================
+         CONTACT SECTION
+         Ganti email, nomor WhatsApp tampilan, dan lokasi.
+         Nomor WhatsApp untuk link diatur di script.js.
+    ========================================================== -->
+    <section class="contact section" id="contact">
+      <div class="section-heading reveal reveal-up">
+        <p class="section-subtitle">Let's Connect</p>
+        <h2>Contact <span>Me</span></h2>
+        <p>
+          Isi form di bawah ini, lalu pesan akan langsung diarahkan ke WhatsApp saya.
+        </p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info reveal reveal-left">
+          <h3>Hubungi Saya.</h3>
+          <p>
+            Saya terbuka untuk peluang kerja, magang dan freelance.
+          </p>
+
+          <div class="contact-list">
+            <div>
+              <span>Email Saya</span>
+              <strong>ashifdieqy@gmail.com</strong>
+            </div>
+
+            <div>
+              <span>WhatsApp Saya</span>
+              <strong>+62 877-7829-7577</strong>
+            </div>
+
+            <div>
+              <span>Lokasi</span>
+              <strong>Indonesia</strong>
+            </div>
+          </div>
+
+          <a href="#" class="btn primary whatsapp-direct" id="whatsappDirect">
+            Chat WhatsApp
+          </a>
+        </div>
+
+        <form class="contact-form reveal reveal-right" id="contactForm">
+          <div class="form-group">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama kamu" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email kamu" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tulis pesan kamu..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary form-submit">
+            Kirim ke WhatsApp
+          </button>
+
+          <p class="form-note">
+            Pesan tidak dikirim ke server. Form ini langsung membuka WhatsApp.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Tombol WhatsApp melayang -->
+  <a href="#" class="floating-whatsapp" id="floatingWhatsapp" aria-label="WhatsApp">
+    WA
+  </a>
+
+  <!-- =========================================================
+       MODAL PORTFOLIO
+       Dipakai untuk detail project dan preview sertifikat.
+       Kontennya dibuat otomatis dari script.js.
+  ========================================================== -->
+  <div class="portfolio-modal" id="portfolioModal" aria-hidden="true">
+    <div class="portfolio-modal-backdrop" data-modal-close></div>
+
+    <div class="portfolio-modal-dialog" role="dialog" aria-modal="true">
+      <button class="modal-close" type="button" aria-label="Close" data-modal-close>
+        ×
+      </button>
+
+      <div class="portfolio-modal-body" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      © <span id="currentYear"></span> Muh Ashif Assidieqy. All rights reserved.
+    </p>
+  </footer>
+
+  <!-- File JavaScript utama -->
+  <script src="script.js"></script>
+</body>
+</html>
